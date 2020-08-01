@@ -1,0 +1,20 @@
+@import '../../utils/scss/variables';
+
+.header {
+  background-color: $dark-gray;
+  display: flex;
+  justify-content: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__content__title {
+  text-transform: uppercase;
+  color: $white;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.68px;
+}

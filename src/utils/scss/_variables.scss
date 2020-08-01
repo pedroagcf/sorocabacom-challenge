@@ -1,0 +1,34 @@
+/* primary colors */
+$white: #ffffff;
+$ice-white: #f0f0f2;
+$white-plus: #ffffff63;
+$green: #7dede2;
+$dark-green: #58b790;
+$dark-gray: #363636;
+$graphite-gray: #707070;
+$gray: #0000004d;
+$light-gray: #00000029;
+$black: #00000029;
+
+// working...
+
+/*semantic colors*/
+$primary-color: $green;
+$header-background-color: $primary-color;
+$secondary-color: $dark-green;
+
+/*Sizes*/
+$header-height: 109px;
+$default-padding: 10px;
+$menu-width: 400px;
+$breakpoint-desktop: 1025px;
+$breakpoint-tablet: 768px;
+$breakpoint-phone-landscape: 481px;
+$footer-background-color: $dark-green;
+
+/* Z-indexes */
+$z-indexes: ('search-bar', 'header', 'loader');
+
+/*Animations*/
+$default-animation-duration: 0.3s;
+$search-animation-duration: 0.1s;
