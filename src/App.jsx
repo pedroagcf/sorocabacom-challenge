@@ -7,7 +7,9 @@ function App() {
   return (
     <div className='app-sorocabacom'>
       <Header />
-      <MainSection />
+      <section className='app-sorocabacom__main'>
+        <MainSection />
+      </section>
     </div>
   );
 }

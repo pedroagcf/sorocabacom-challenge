@@ -1,9 +1,12 @@
 @import '../../utils/scss/variables';
 
 .header {
-  background-color: $dark-gray;
+  background-color: #363636;
   display: flex;
   justify-content: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
 }
 
 .header__content {

@@ -1,4 +1,6 @@
 .app-sorocabacom {
+  background: url('./assets/background-main.png') no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -6,14 +8,10 @@
   max-height: 100vh;
 }
 
-// .app-movie-main {
-//   flex-grow: 1;
-//   display: flex;
-//   flex-direction: column;
-//   background-color: #eeeeee;
-//   overflow: auto;
-// }
-
-// .app-movie-main__page-container {
-//   flex-grow: 1;
-// }
+.app-sorocabacom__main {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  // overflow: auto;
+}
