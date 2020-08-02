@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import MainSection from './components/MainSection/MainSection';
 import SliderSection from './components/SliderSection/SliderSection';
+import FormSection from './components/FormSection/FormSection';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <MainSection />
       </section>
       <SliderSection />
+      <FormSection />
     </div>
   );
 }
