@@ -22,9 +22,11 @@ $secondary-color: $dark-green;
 $header-height: 109px;
 $default-padding: 10px;
 $menu-width: 400px;
-$breakpoint-desktop: 1025px;
-$breakpoint-tablet: 768px;
-$breakpoint-phone-landscape: 481px;
+
+$breakpoint-tablet-min: 800px;
+$breakpoint-tablet-max: 1024px;
+$breakpoint-phone-max: 640px;
+
 $footer-background-color: $dark-green;
 
 /* Z-indexes */

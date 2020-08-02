@@ -21,4 +21,12 @@
   font-size: 22px;
   letter-spacing: 0.68px;
   margin-left: 30px;
+
+  @media (max-width: $breakpoint-phone-max) {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    font-size: 18px;
+  }
 }

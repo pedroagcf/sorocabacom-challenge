@@ -1,5 +1,55 @@
+@import '../../utils/scss/variables';
 .character-card {
-  width: calc((100% - 205px) / 3);
-  background-color: red;
+  width: calc((100% - 210px) / 3);
+  background-color: white;
   position: relative;
+  border-radius: 20px;
+  height: 610px;
+  /* position: relative; */
+  box-sizing: border-box;
+
+  @media (max-width: $breakpoint-phone-max) {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    width: 100%;
+  }
+}
+
+.character-card__wrapper {
+  position: absolute;
+  top: -80px;
+  /* padding: 20px; */
+  // height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /* transform: translateY(10px); */
+}
+
+.character-card__wrapper__image {
+  width: 90%;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  background: $dark-gray;
+  border: solid 2px white;
+  border-radius: 80px;
+  height: 450px;
+  transform: translateX(-50%);
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: -93px;
+    height: 555px;
+    transform: translateX(-50%);
+  }
+}
+
+.character-card__description {
+  position: absolute;
+  top: 400px;
+  padding: 0 30px;
+  font-size: 20px;
 }
