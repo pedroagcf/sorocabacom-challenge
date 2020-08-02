@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './MainSection.scss';
-import ChampionCard from '../ChampionCharacter/ChampionCard';
+import ChampionCard from '../ChampionCard/ChampionCard';
 
 const MainSection = () => {
   return (

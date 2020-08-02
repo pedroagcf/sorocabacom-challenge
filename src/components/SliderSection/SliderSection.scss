@@ -16,20 +16,6 @@
   padding: 109px 0px 235px 0px;
 }
 
-.slider-section__wrapper {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 100px;
-}
-
-.slider-section__wrapper__card {
-  background-color: red;
-  width: calc((100% - 205px) / 3);
-  height: 200px;
-}
-
 .slider-section__container__arrow {
   height: 35px;
   width: 35px;
