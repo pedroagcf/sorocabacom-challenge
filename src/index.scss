@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 @import url('https://fonts.googleapis.com/css2?family= :wght@300;400;700&display=swap');
@@ -132,4 +132,7 @@ table {
 }
 ::-webkit-input-placeholder {
   color: black;
+}
+* {
+  scroll-behavior: smooth;
 }

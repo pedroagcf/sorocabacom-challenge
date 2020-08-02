@@ -1,0 +1,42 @@
+@import '../../utils/scss/variables';
+
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding: 205px 140px;
+  background-color: $dark-gray;
+}
+
+.footer__button {
+  box-sizing: border-box;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  bottom: 205px;
+  right: 140px;
+  border: none;
+  background-color: $white;
+  border-radius: 50%;
+  outline: none;
+}
+
+.footer__button__arrow {
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  display: block;
+  padding: 0;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.--up {
+  @extend .footer__button__arrow;
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  transform: rotate(-45deg);
+}

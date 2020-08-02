@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import MainSection from './components/MainSection/MainSection';
 import SliderSection from './components/SliderSection/SliderSection';
 import FormSection from './components/FormSection/FormSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </section>
       <SliderSection />
       <FormSection />
+      <Footer />
     </div>
   );
 }
