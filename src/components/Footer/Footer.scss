@@ -20,6 +20,10 @@
   background-color: $white;
   border-radius: 50%;
   outline: none;
+
+  @media (max-width: $breakpoint-tablet-max) {
+    display: none;
+  }
 }
 
 .footer__button__arrow {

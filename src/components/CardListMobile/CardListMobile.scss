@@ -1,0 +1,30 @@
+@import '../../utils/scss/variables';
+
+.card-list-mobile {
+  display: none;
+  @media (max-width: $breakpoint-phone-max) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 6%;
+    display: flex;
+  }
+
+  @media (max-width: $breakpoint-tablet-max) {
+    .character-card:not(:first-child) {
+      display: none;
+    }
+  }
+}
+
+.card-list-mobile {
+  .character-card__wrapper__image {
+    overflow: hidden;
+  }
+  .character-card__wrapper__image img {
+    top: 60px;
+    height: 90%;
+    width: 100%;
+  }
+}

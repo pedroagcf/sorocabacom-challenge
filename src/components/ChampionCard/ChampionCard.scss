@@ -14,12 +14,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .champion-card__feather {
+  display: none;
   position: absolute;
   width: 199px;
   height: 173px;
+
+  @media (min-width: $breakpoint-phone-max + 1) {
+    display: block;
+  }
 }
 
 .champion-card__wrapper {
@@ -29,13 +35,13 @@
   @extend .champion-card__feather;
   background: url('../../assets/pena.png') no-repeat;
   top: 366px;
-  right: 80px;
+  right: 405px;
 }
 .--top-right {
   @extend .champion-card__feather;
   background: url('../../assets/pena1.png') no-repeat;
-  top: 472px;
-  right: 20px;
+  top: 470px;
+  right: 350px;
 }
 .--bottom-left {
   @extend .champion-card__feather;
@@ -53,6 +59,10 @@
 .champion-card__image {
   width: 526px;
   height: 754px;
+  @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
+    width: 100%;
+    height: 90%;
+  }
 }
 .champion-card__title {
   text-transform: uppercase;
@@ -61,6 +71,9 @@
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 20px;
+  @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
+    margin-top: 20px;
+  }
 }
 
 .champion-card__container {
