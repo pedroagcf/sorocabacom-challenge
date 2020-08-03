@@ -12,6 +12,16 @@
 .header__content {
   display: flex;
   align-items: center;
+
+  img {
+    @media (max-width: $breakpoint-phone-max) {
+      height: 80px;
+    }
+  }
+}
+@fontface {
+  font-family: 'Montserrat';
+  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 .header__content__title {
@@ -21,6 +31,7 @@
   font-size: 22px;
   letter-spacing: 0.68px;
   margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
 
   @media (max-width: $breakpoint-phone-max) {
     display: none;

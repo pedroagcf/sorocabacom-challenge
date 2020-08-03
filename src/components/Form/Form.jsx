@@ -1,19 +1,33 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './Form.scss';
 
 const Form = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors, formState } = useForm({
+    mode: 'onChange',
+  });
+  const notify = () => {
+    toast.success('Enviado!', {
+      position: 'bottom-right',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+    console.log('oi');
+  };
 
   const onSubmit = (data) => {
-    console.log('oi');
-
     console.log(data);
   };
 
   return (
-    <form className='form' onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form className='form' onSubmit={handleSubmit(onSubmit)}>
       <h1 className='form__title'>formulário</h1>
       <p className='form-description'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -68,9 +82,27 @@ const Form = () => {
         {errors.message && errors.message.type === 'maxLength' && (
           <p className='error'>Maximo de 60 caracteres</p>
         )}
-        <button className='form__send-button' type='submit'>
+        <button
+          className='form__send-button'
+          type='submit'
+          disabled={!formState.isValid}
+          onClick={() => notify()}
+        >
           enviar
         </button>
+
+        <ToastContainer
+          position='bottom-right'
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <ToastContainer />
       </div>
     </form>
   );

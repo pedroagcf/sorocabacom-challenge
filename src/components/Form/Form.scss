@@ -35,7 +35,13 @@
   }
 }
 
+@fontface {
+  font-family: 'Montserrat';
+  src: url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
 .form__title {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;

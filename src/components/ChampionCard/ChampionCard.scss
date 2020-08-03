@@ -61,7 +61,7 @@
   height: 754px;
   @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
     width: 100%;
-    height: 90%;
+    height: 60%;
   }
 }
 .champion-card__title {
@@ -72,7 +72,7 @@
   margin-bottom: 20px;
   line-height: 20px;
   @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 }
 
@@ -126,5 +126,9 @@
     right: 0;
     text-align: center;
     bottom: -15px;
+  }
+
+  @media (max-width: $breakpoint-phone-max) {
+    display: none;
   }
 }
